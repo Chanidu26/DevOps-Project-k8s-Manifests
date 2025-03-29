@@ -22,7 +22,7 @@ spec:
               valueFrom:
                 configMapKeyRef:
                   name: frontend-config
-                  key: API_BASE_URL
+                  key: REACT_APP_API_BASE_URL
 ---
 apiVersion: v1
 kind: Service
@@ -33,6 +33,6 @@ spec:
     app: frontend
   ports:
     - protocol: TCP
-      port: 3000
+      port: 80
       targetPort: 3000
   type: LoadBalancer
