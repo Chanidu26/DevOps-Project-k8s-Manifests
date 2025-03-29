@@ -19,7 +19,7 @@ spec:
             - containerPort: 8000
           env:
             - name: MONGO
-              value: "mongodb://$(DB_USER):$(DB_PASS)@mongodb-service:27017/$(DB_NAME)"
+              value: "mongodb://$(DB_USER):$(DB_PASS)@mongodb-service:27017/$(DB_NAME)?authSource=admin"
             - name: DB_NAME
               value: devopsdb
             - name: DB_USER
