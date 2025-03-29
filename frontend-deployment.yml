@@ -18,7 +18,7 @@ spec:
           ports:
             - containerPort: 3000
           env:
-            - name: API_BASE_URL
+            - name: REACT_APP_API_BASE_URL
               valueFrom:
                 configMapKeyRef:
                   name: frontend-config
