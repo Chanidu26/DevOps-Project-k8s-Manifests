@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Deploy all the resources"
 
 kubectl apply -f mongo-secret.yaml
