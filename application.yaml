@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: mern-app
+  namespace: argocd   # Argo CD Application CRD must be in the argocd namespace
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/Chanidu26/DevOps-Project-k8s-Manifests.git
+    targetRevision: HEAD
+    path: .   # Root of the repo
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+
+  syncPolicy:
+    automated: {}  # Optional: Enables auto-syncing from Git
