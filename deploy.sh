@@ -8,3 +8,4 @@ kubectl apply -f mongodb-deployment.yaml
 kubectl apply -f backend-deployment.yaml
 kubectl apply -f frontend-config.yaml
 kubectl apply -f frontend-deployment.yml
+kubectl apply -f ingress.yaml

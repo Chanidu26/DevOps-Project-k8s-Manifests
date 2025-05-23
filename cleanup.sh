@@ -8,3 +8,4 @@ kubectl delete -f mongodb-deployment.yaml
 kubectl delete -f backend-deployment.yaml
 kubectl delete -f frontend-config.yaml
 kubectl delete -f frontend-deployment.yml
+kubectl delete -f ingress.yaml
